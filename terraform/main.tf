@@ -1,4 +1,4 @@
 resource "azurerm_resource_group" "rg" {
-  name     = "rg-enterprise-dev-tf"
-  location = "Central India"
+  name     = var.resource_group_name
+  location = var.location
 }
