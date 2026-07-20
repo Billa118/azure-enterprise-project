@@ -118,3 +118,12 @@ systemctl start nginx
 EOF
   )
 }
+
+module "storage" {
+  source = "./modules/storage"
+
+  storage_account_name = "stmanoj20260720"
+
+  resource_group_name = azurerm_resource_group.rg.name
+  location            = azurerm_resource_group.rg.location
+}
