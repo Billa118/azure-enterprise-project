@@ -22,3 +22,9 @@ variable "location" {
     error_message = "Location must be Central India, East US, or East US 2."
   }
 }
+
+variable "admin_password" {
+  description = "Virtual Machine Administrator Password"
+  type        = string
+  sensitive   = true
+}
