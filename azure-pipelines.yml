@@ -1,0 +1,39 @@
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+
+- checkout: self
+
+- script: |
+    echo "===================================="
+    echo "Azure Enterprise Project"
+    echo "===================================="
+    pwd
+    ls -la
+  displayName: "Project Information"
+
+- script: |
+    echo "Starting Build..."
+    sleep 2
+    echo "Build Successful"
+  displayName: "Build"
+
+- script: |
+    echo "Running Validation..."
+    sleep 2
+    echo "Validation Successful"
+  displayName: "Validation"
+
+- script: |
+    echo "Deploying Application..."
+    sleep 2
+    echo "Deployment Successful"
+  displayName: "Deploy"
+
+- script: |
+    echo "Pipeline Completed Successfully!"
+  displayName: "Finish"
