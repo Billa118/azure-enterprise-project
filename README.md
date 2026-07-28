@@ -6,6 +6,12 @@ This project demonstrates how to provision, secure, monitor, and deploy infrastr
 
 The project simulates a real enterprise environment and covers Infrastructure as Code (IaC), CI/CD, monitoring, security, and application deployment.
 
+## Architecture Diagram
+
+The following diagram illustrates the Azure enterprise infrastructure, including networking, compute, monitoring, backup, and CI/CD deployment workflow.
+
+![Azure Enterprise Architecture](architecture/architecture.png)
+
 ---
 
 ## Technologies
